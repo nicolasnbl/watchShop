@@ -7,10 +7,11 @@
 .liste-icon li{
     margin: 5px;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .icon svg{
     height: 20px;
     width: 20px;
-
 }
