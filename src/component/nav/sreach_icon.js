@@ -18,7 +18,7 @@ const Search = () => {
 
 
   return (
-    <div className="" >
+    <div className="block-search" >
         <div className="">
             <div className="">Que recherchez-vous ?</div>
             <div className="trait-Search"></div>

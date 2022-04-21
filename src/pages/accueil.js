@@ -1,14 +1,14 @@
 import React from 'react';
-import Nav from '../component/nav';
-import Second from '../component/sreach_icon';
+import Header from '../component/header';
+import Nav from '../component/nav/nav';
+import FenetreInfo from '../component/navInfoFenetre/fenetreInfo';
 
 const accueil = () => {
-
 
   return (
     <div className="">
       <Nav />
-      <Second />
+      <FenetreInfo />
     </div>
   )
 }

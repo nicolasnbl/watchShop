@@ -1,0 +1,16 @@
+.liste-icon{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.liste-icon li{
+    margin: 5px;
+    list-style: none;
+}
+
+.icon svg{
+    height: 20px;
+    width: 20px;
+
+}
