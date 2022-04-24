@@ -16,3 +16,14 @@
 .display-none{
     display: none;
 }
+
+
+.text-show{
+    opacity: 100;
+    transition: opacity 5s;
+}
+
+.text-hide{
+    opacity: 0;
+    transition: opacity 5s;
+}
