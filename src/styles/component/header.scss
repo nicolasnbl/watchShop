@@ -1,5 +1,5 @@
 .header-block{
-    height: 62px;
+    height: 3.875rem;
     display: flex;
     flex-direction: row;
     padding-right: 40px;
@@ -9,9 +9,14 @@
 }
 
 .logo-block{
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-block{
-
+    position: relative;
+    display: flex;
+    vertical-align: middle;
 }

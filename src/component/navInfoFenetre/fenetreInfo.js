@@ -19,27 +19,30 @@ const FenetreInfo = () => {
   var classNameMb = "movingBarre "+numMenu;
 //Partie changement contenu menu
   const [menuOn, setmenuOn] = useState({
-    n1: "",
-    n2: "display-none",
-    n3: "display-none",
+    n1: {contenu: "", title: "textShadow"},
+    n2: {contenu: "display-none", title: ""},
+    n3: {contenu: "display-none", title: ""},
   });
-  var classCM_1 = "blue menu "+menuOn.n1;
+  var classCM_1 = "blue menu "+menuOn.n1.contenu;
   var classCM_2 = "red menu "+menuOn.n2;
-  var classCM_3 = "green menu "+menuOn.n3;  
+  var classCM_3 = "green menu "+menuOn.n3;
+  var classTM_1 = menuOn.n1.title;
+  var classTM_2 = menuOn.n2.title;
+  var classTM_3 = menuOn.n3.title;
 //Fonction menu globale
   const changerMenu = (e) => {
     switch(e){
       case 1:
         setnumMenu("mb-favoris");
-        setmenuOn({n1: "", n2: "display-none", n3: "display-none"});
+        setmenuOn({n1: {contenu: "", title: "textShadow"}, n2: {contenu: "display-none", title: ""}, n3: {contenu: "display-none", title: ""}});
         break;
       case 2:
         setnumMenu("mb-compte");
-        setmenuOn({n1: "display-none", n2: "", n3: "display-none"});
+        setmenuOn({n1: {contenu: "display-none", title: ""}, n2: {contenu: "", title: "textShadow"}, n3: {contenu: "display-none", title: ""}});
         break;
       case 3:
         setnumMenu("mb-panier");
-        setmenuOn({n1: "display-none", n2: "display-none", n3: ""});
+        setmenuOn({n1: {contenu: "display-none", title: ""}, n2: {contenu: "display-none", title: ""}, n3: {contenu: "", title: "textShadow"}});
         break;
     }
   }
@@ -54,9 +57,9 @@ const FenetreInfo = () => {
         </div>
         <div className="barre-2">
             <ul>
-                <li onClick={() => changerMenu(1)}><p>Favoris</p></li>
-                <li onClick={() => changerMenu(2)}><p>Compte</p></li>
-                <li onClick={() => changerMenu(3)}><p>Panier</p></li>
+                <li onClick={() => changerMenu(1)}><p className={classTM_1}>Favoris</p></li>
+                <li onClick={() => changerMenu(2)}><p className={classTM_2}>Compte</p></li>
+                <li onClick={() => changerMenu(3)}><p className={classTM_3}>Panier</p></li>
             </ul>
             <div className={classNameMb}></div>
         </div>

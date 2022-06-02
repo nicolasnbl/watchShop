@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import DispatchBlock from '../component/DispatchBlock';
 import Header from '../component/header';
 import FenetreInfo from '../component/navInfoFenetre/fenetreInfo';
 import FenetreInfoContext from '../FenetreInfoContext';
@@ -30,6 +31,9 @@ const Accueil = () => {
         <FenetreInfo />
       </div>
       <div className={classNameBBO}></div>
+      <main>
+        <DispatchBlock />
+      </main>
     </FenetreInfoContext.Provider>
   )
 }
