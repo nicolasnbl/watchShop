@@ -82,8 +82,30 @@
 
 .transformTranslateX100{
     transform: translateX(0);
+    transition: all 0.5s;
 }
 
 .transformTranslateX0{
     transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.barre-3{
+    height: 100%;
+}
+
+.menu{
+    height: inherit;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
 }

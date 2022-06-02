@@ -2,5 +2,20 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 30;
 }
 
+.bgdBlackOpacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 45%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 29;
+}
+
+.display-none-bgdBlack{
+    display: none;
+}

@@ -1,23 +1,36 @@
 import React, {useState} from 'react';
 import Header from '../component/header';
 import FenetreInfo from '../component/navInfoFenetre/fenetreInfo';
+import FenetreInfoContext from '../FenetreInfoContext';
 
 const Accueil = () => {
 
-  const [stateMenu, setstateMenu] = useState("transformTranslateX100");
+  const [stateMenu, setstateMenu] = useState({
+    transformMenu: "transformTranslateX0",
+    bgdBlack: "display-none",
+  });
+  const [menuSelect, setmenuSelect] = useState(1);
 
-  var classNameFIB = "fenetreInfoBlock "+stateMenu;
+  const contextValue = {
+    stateMenu,
+    menuSelect,
+    openFenetreInfo: setstateMenu,
+    openSelectMenu: setmenuSelect,
+  }
+
+  var classNameFIB = "fenetreInfoBlock "+stateMenu.transformMenu;
+  var classNameBBO = "bgdBlackOpacity "+stateMenu.bgdBlack;
 
   return (
-    <div className="">
+    <FenetreInfoContext.Provider value={contextValue}>
       <header>
         <Header />
       </header>
       <div className={classNameFIB}>
-        <FenetreInfo modifyStateMenu={setstateMenu}/>
+        <FenetreInfo />
       </div>
-      
-    </div>
+      <div className={classNameBBO}></div>
+    </FenetreInfoContext.Provider>
   )
 }
 
