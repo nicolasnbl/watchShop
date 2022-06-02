@@ -5,7 +5,7 @@ import PageTest from './pages/pagetestcomponent';
 function App() {
   return (
     <div className="App">
-      <PageTest />
+      <Accueil />
     </div>
   );
 }

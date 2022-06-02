@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 
 const Search = () => {
 
@@ -10,7 +10,7 @@ const Search = () => {
   classNameTxt = isVisible ? "txt-search text-show" : "txt-search display-none text-hide";
   classNameTrait = isVisible ? "trait-Search TraitSearchShow" : "trait-Search";
 
-  const changeVisibility = () =>{
+  const changeVisibility = () => {
     if(isVisible){
       setVisible(false); 
     }else {

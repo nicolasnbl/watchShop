@@ -1,15 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../component/header';
 import FenetreInfo from '../component/navInfoFenetre/fenetreInfo';
 
-const accueil = () => {
+const Accueil = () => {
+
+  const [stateMenu, setstateMenu] = useState("transformTranslateX100");
+
+  var classNameFIB = "fenetreInfoBlock "+stateMenu;
 
   return (
     <div className="">
-      <Header />
-      <FenetreInfo />
+      <header>
+        <Header />
+      </header>
+      <div className={classNameFIB}>
+        <FenetreInfo modifyStateMenu={setstateMenu}/>
+      </div>
+      
     </div>
   )
 }
 
-export default accueil
+export default Accueil

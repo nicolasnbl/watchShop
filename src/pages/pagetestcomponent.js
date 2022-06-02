@@ -6,7 +6,7 @@ import FenetreInfo from '../component/navInfoFenetre/fenetreInfo';
 const pagetestcomponent = () => {
   return (
     <div>
-        <Header />
+        <FenetreInfo />
     </div>
   )
 }
