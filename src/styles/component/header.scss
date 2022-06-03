@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.desktop-block{
+    display: flex;
+}
+
 .logo-block{
     position: absolute;
     top: 50%;
@@ -20,3 +24,5 @@
     display: flex;
     vertical-align: middle;
 }
+
+

@@ -26,6 +26,9 @@ const Accueil = () => {
     <FenetreInfoContext.Provider value={contextValue}>
       <header>
         <Header />
+        <div className="smallScreenSearch">
+          <input type="text" placeholder='Que recherchez-vous ?' />
+        </div>
       </header>
       <div className={classNameFIB}>
         <FenetreInfo />

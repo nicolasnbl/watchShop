@@ -24,8 +24,8 @@ const FenetreInfo = () => {
     n3: {contenu: "display-none", title: ""},
   });
   var classCM_1 = "blue menu "+menuOn.n1.contenu;
-  var classCM_2 = "red menu "+menuOn.n2;
-  var classCM_3 = "green menu "+menuOn.n3;
+  var classCM_2 = "red menu "+menuOn.n2.contenu;
+  var classCM_3 = "green menu "+menuOn.n3.contenu;
   var classTM_1 = menuOn.n1.title;
   var classTM_2 = menuOn.n2.title;
   var classTM_3 = menuOn.n3.title;

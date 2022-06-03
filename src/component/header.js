@@ -6,7 +6,7 @@ import Nav from './nav/nav';
 const header = () => {
   return (
     <div className="header-block">
-      <div className="desktop">
+      <div className="desktop-block">
         <Desktop />
       </div>
       <div className="logo-block">
