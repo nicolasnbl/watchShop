@@ -1,49 +1,102 @@
 .fenetreInfo{
     height: 100vh;
-    width: 500px;
+    width: 34.375rem;
+    background-color: white;
 }
 
 .barre-1{
-    height: 50px;
+    width: 100%;
+    height: 5rem;
     display: flex;
     justify-content: end;
+    align-items: center;
+    position: relative;
 }
 
-.barre-1-cross{
-    
-    margin: auto;
-    margin-right: 40px;
+.cross{
+    position: absolute;
+    margin: 2rem;
+    width: 20px;
+    height: 20px;
+}
+
+.cross:hover{
+    cursor: pointer;
 }
 
 
 
 .barre-2{
     position: relative;
-    height: 50px;
+    height: 2.8125rem;
     display: flex;
-    border-top: 1px gray solid;
-    border-bottom: 1px gray solid;
+    border-top: 0.0625rem solid #e5e5e5;
+    border-bottom: 0.0625rem solid #e5e5e5;
 }
 
 .barre-2 ul{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .barre-2 ul li {
-    width: 100px;
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    font-family: inherit;
+}
+
+.barre-2 ul li p{
     list-style: none;
     text-align: center;
     margin: auto;
+    text-transform: uppercase;
+    font-size: 0.75rem;
 }
 
 .movingBarre{
     position: absolute;
     bottom: 0;
-    left: 45px;
     background-color: black;
     height: 2px;
-    width: 75px;
+    width: 4rem;
 }
+
+.mb-favoris{
+    left: 3.7675rem;
+    transition: all 0.5s;
+}
+
+.mb-compte{
+    left: 15.375rem;
+    transition: all 0.5s;
+}
+
+.mb-panier{
+    left: 26.75rem;
+    transition: all 0.5s;
+}
+
+.transformTranslateX100{
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+
+.transformTranslateX0{
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.barre-3{
+    height: 100%;
+}
+
+.menu{
+    height: inherit;
+}
+

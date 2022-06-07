@@ -1,0 +1,85 @@
+
+.dispatchBlock{
+    width: 100vw;
+    height: calc(85vh);
+    background-color: aqua;
+    display: flex;
+}
+
+.linkDispatchContainer1{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.linkDispatchContainer1:hover{
+    width: 120%;
+    transition: all 0.5s;
+}
+
+.linkDispatchContainer1:not(hover){
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.linkDispatchContainer2{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.linkDispatchContainer2:hover{
+    width: 120%;
+    transition: all 1s;
+}
+
+.linkDispatchContainer2:not(hover){
+    width: 100%;
+    transition: all 1s;
+}
+
+.imageDispatchContainer1{
+    left: 0;
+    width: 120%;
+    height: 100%;
+}
+
+.imageDispatchContainer2{
+    right: 0;
+    width: 120%;
+    height: 100%;
+}
+
+.imageDispatchContainer1 h1{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    line-height: 0%;
+    top: 50%;
+    font-size: 2rem;
+}
+
+.imageDispatchContainer2 h1{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    line-height: 0%;
+    top: 50%;
+    font-size: 2rem;
+}
+
+.imageDispatch_1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+}
+
+.imageDispatch_2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+}

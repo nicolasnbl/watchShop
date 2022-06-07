@@ -1,0 +1,28 @@
+.header-block{
+    height: 3.875rem;
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    padding-left: 40px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.desktop-block{
+    display: flex;
+}
+
+.logo-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-block{
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+}
+
+
