@@ -1,0 +1,107 @@
+@media (max-width: 52rem) {
+
+    html{
+        font-size: 10px;
+    }
+
+    .header-block{
+        height: 4.5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .desktop-block{
+        display: none;
+    }
+
+    .logo-block{
+        position: relative;
+        left: 0;
+        transform: translate(0,-50%);
+        display: flex;
+        vertical-align: middle;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo svg{
+        height: 2.4rem;
+    }
+
+    .nav-block{
+        position: relative;
+        display: flex;
+        vertical-align: middle;
+    }
+
+ }
+
+ @media (max-width: 34rem) {
+
+    html{
+        font-size: 7px;
+    }
+
+    .smallScreenSearch{
+        display: block;
+    }
+
+    .block-search{
+        display: none;
+    }
+
+    .fenetreInfoBlock{
+        width: 100%;
+    }
+
+    .fenetreInfo{
+        width: inherit;
+    }
+
+    .barre-1{
+        height: 7rem;
+    }
+
+    .barre-2{
+        height: 7rem;
+    }
+
+    .barre-2 ul li p{
+        font-size: 2rem;
+    }
+
+    .movingBarre{
+        height: 2px;
+        width: 8.5rem;
+    }
+
+    .mb-favoris{
+        left: 7rem;
+    }
+    
+    .mb-compte{
+        left: 29.5rem;
+    }
+    
+    .mb-panier{
+        left: 51.75rem;
+    }
+
+ }
+
+
+.smallScreenSearch{
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+
+.smallScreenSearch input{
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    border-bottom: solid black 1px;
+}

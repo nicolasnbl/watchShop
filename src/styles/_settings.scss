@@ -11,3 +11,57 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    font-size: 16px;
+    font-family: Century Gothic Std,arial,sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Century Gothic Std,arial,sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h2{
+    font-family: Century Gothic Std,arial,sans-serif;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+
+.display-none{
+    display: none;
+}
+
+
+.text-show{
+    opacity: 100;
+    transition: opacity 5s;
+}
+
+.text-hide{
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+.textShadow{
+    text-shadow: black 0px 0px 0px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
